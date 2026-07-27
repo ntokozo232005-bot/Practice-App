@@ -4,7 +4,6 @@ import { Button, StyleSheet, Text, TextInput, View, Image } from 'react-native';
 import { useState } from 'react';
 
 export default function App() {
-
   const [name, setName] = useState('');
   const [surname, setSurname] = useState('');
 
@@ -23,20 +22,19 @@ export default function App() {
       />
       <Text style={styles.welcomeTxt}>Welcome to my app!</Text>
 
+
       <Text style={styles.label}>Enter your name:</Text>
       <View style={styles.divider} />
       <TextInput
         placeholder="Ntokozo"
-        onchangeText=[newText => setName(newText)]/>
-  
-        onChangeText={setName}
+        value={name}
+          onChangeText={setName}
         style={styles.input}
       />
 
       <Text style={styles.label}>Enter your surname:</Text>
       <TextInput
         placeholder="Ngcobo"
-        onchange=[newText => setSurname(newText)]/>
         value={surname}
         onChangeText={setSurname}
         style={styles.input}
