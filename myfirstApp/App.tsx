@@ -1,10 +1,15 @@
 import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, TextInput, View, Image } from 'react-native';
+import { useState } from 'react';
 
 export default function App() {
+
   const [name, setName] = useState('');
   const [surname, setSurname] = useState('');
+
+  console.log("App works!");
+  
 
   const handleAddUser = () => {
     console.log('Added:', name, surname);
@@ -22,7 +27,8 @@ export default function App() {
       <View style={styles.divider} />
       <TextInput
         placeholder="Ntokozo"
-        value={name}
+        onchangeText=[newText => setName(newText)]/>
+  
         onChangeText={setName}
         style={styles.input}
       />
@@ -30,6 +36,7 @@ export default function App() {
       <Text style={styles.label}>Enter your surname:</Text>
       <TextInput
         placeholder="Ngcobo"
+        onchange=[newText => setSurname(newText)]/>
         value={surname}
         onChangeText={setSurname}
         style={styles.input}
