@@ -16,7 +16,16 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({welcomeText: {
+  paddingTop: 40
+  color: 'purple',
+  fontSize: 28,
+  fontWeight: 'bold',
+  textAlign: 'center'
+},
+
+
+
   container: {
     flex: 1,
     backgroundColor: '#fff',
