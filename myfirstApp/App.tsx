@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Button,Image } from 'react-native';
 
 export default function App() {
   return (
@@ -22,9 +22,22 @@ const styles = StyleSheet.create({welcomeText: {
   fontWeight: 'bold',
   textAlign: 'center'
 },
+  mainPicture: {
+    paddingTop: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  ImageSize: {
+    width: 350,
+    height: 350,
+  },
+  HeadingText: {
+    fontWeight: 'bold',
+  },
+    InputBox: {
+      fontWeight: 'bold',
 
-
-
+    },
   container: {
     flex: 1,
     backgroundColor: '#fff',
