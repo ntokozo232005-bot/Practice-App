@@ -3,7 +3,16 @@ import { StyleSheet, Text, TextInput, View, Button,Image } from 'react-native';
 
 export default function App() {
   return (
+
     <View style={styles.container}>
+
+      <View style={styles.mainPicture}>
+        <Image style={styles.ImageSize} source={require('./images/helloKitty.jpg')} />
+
+      </View>
+
+
+
       <Text style={styles.welcomeText}>Welcome to my app!</Text>
       <Text>Enter Name:</Text>
       <TextInput placeholder="First Name" />
