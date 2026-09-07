@@ -14,10 +14,10 @@ export default function App() {
 
 
       <Text style={styles.welcomeText}>Welcome to my app!</Text>
-      <Text>Enter Name:</Text>
-      <TextInput placeholder="First Name" />
-      <Text>Enter Surname:</Text>
-      <TextInput placeholder="Last Name" />
+      <Text style={styles.HeadingText}>Enter First Name:</Text>
+      <TextInput style={styles.InputBox} placeholder="First Name" />
+      <Text style={styles.HeadingText}>Enter Surname:</Text>
+      <TextInput style={styles.InputBox} placeholder="Last Name" />
       <Button title="Add User" />
       <StatusBar style="auto" />
     </View>
